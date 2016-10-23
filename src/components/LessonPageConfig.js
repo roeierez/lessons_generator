@@ -1,6 +1,6 @@
 import React, {PropTypes, Component} from 'react';
 
-class LessonPageConfiguration extends Component {
+class LessonPageConfig extends Component {
 
     static propTypes = {
         pageName: PropTypes.string,
@@ -14,4 +14,4 @@ class LessonPageConfiguration extends Component {
     }
 }
 
-export default LessonPageConfiguration;
+export default LessonPageConfig

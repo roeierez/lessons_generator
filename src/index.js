@@ -15,27 +15,28 @@ const store = configureStore(
         lessons: Map({
             networkError: null,
             isNetworkLoading: false,
+            selectedPageID: null,
             lessonsList: List([{
-                id: 1,
+                id: '1',
                 name: "C++ Security",
-                pages: [{id: 100, name: "Introduction to Stack"}, {id: 101, name: "Push Pop"}, {
-                    id: 102,
+                pages: List([{id: '100', name: "Introduction to Stack"}, {id: '101', name: "Push Pop"}, {
+                    id: '102',
                     name: "Calling Functions"
-                }]
+                }])
             }, {
-                id: 2,
+                id: '2',
                 name: "Javascript",
-                pages: [{id: 200, name: "Everything is a function"}, {id: 201, name: "The prototype"}, {
-                    id: 202,
+                pages: List([{id: '200', name: "Everything is a function"}, {id: '201', name: "The prototype"}, {
+                    id: '202',
                     name: "Type Safety?"
-                }]
+                }])
             }, {
-                id: 3,
+                id: '3',
                 name: "C#",
-                pages: [{id: 300, name: "Object Oriented Basics"}, {id: 301, name: "The bytecode"}, {
-                    id: 302,
+                pages: List([{id: '300', name: "Object Oriented Basics"}, {id: '301', name: "The bytecode"}, {
+                    id: '302',
                     name: "The Virtual Machine"
-                }]
+                }])
             }]),
             currentPage: null
         })

@@ -6,10 +6,11 @@ const muiTheme = getMuiTheme({
         primary1Color: blue500,
         primary2Color: blue700,
         primary3Color: blue400,
-        accent1Color: deepOrange500,
-        accent2Color: deepOrange100,
-        accent3Color: deepOrange100,
+
         pickerHeaderColor: blue500,
+    },
+    toolbar: {
+
     }
 });
 

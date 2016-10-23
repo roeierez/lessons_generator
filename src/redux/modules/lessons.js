@@ -28,10 +28,13 @@ const lessons = createReducer({
                 .set("networkError", null);
         },
 
-
         "NETWORK_RESPONSE_ERROR": (state, action) => {
             return state.set("isNetworkLoading", true)
                 .set("networkError", action.payload);
+        },
+
+        "SELECT_PAGE": (state, action) => {
+            return state.set("selectedPageID", action.payload);
         }
 
     }, Map({
@@ -60,5 +63,10 @@ export const savePage = (page) => ({
     type: 'SAVE_PAGE',
     payload: page
 })
+
+export const selectPage = (pageID) => ({
+    type: 'SELECT_PAGE',
+    payload: pageID
+});
 
 export default lessons
